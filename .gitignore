@@ -1,0 +1,8 @@
+dist
+.DS_Store
+*.egg-info
+auto_subtitle/__pycache__
+build
+.venv
+input_video.mp4
+input_video.srt
