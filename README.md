@@ -12,6 +12,11 @@ I only use it with srt_only, so there're potentially bugs.
 3. ```pip install .```
 4. ```asf input_video.mp4```
 
+---
+---
+
+# Original README
+
 # Automatic subtitles in your videos
 
 This repository uses `ffmpeg` and [OpenAI's Whisper](https://openai.com/blog/whisper) to automatically generate and overlay subtitles on any video.
