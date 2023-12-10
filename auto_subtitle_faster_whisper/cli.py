@@ -12,7 +12,7 @@ def main():
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument("video", nargs="+", type=str,
                         help="paths to video files to transcribe")
-    parser.add_argument("--model", default="large-v3",
+    parser.add_argument("--model", default="large",
                         choices=faster_whisper.available_models(), help="name of the Whisper model to use")
     parser.add_argument("--output_dir", "-o", type=str,
                         default=".", help="directory to save the outputs")
