@@ -35,7 +35,7 @@ def main():
     
     os.makedirs(output_dir, exist_ok=True)
         
-    model = faster_whisper.WhisperModel(model_name, device="cuda", compute_type="float16")
+    model = faster_whisper.WhisperModel(model_name, device="cpu", compute_type="float16")
     audios = get_audio(args.pop("video"))
     subtitles = get_subtitles(
         audios, output_srt or srt_only, output_dir, lambda audio_path: model.transcribe(audio_path, language=language, **args)
